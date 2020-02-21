@@ -1,2 +1,2 @@
 # react
-including all the vue projects base on m2
+including all the react projects base on m2
