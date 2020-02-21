@@ -1,0 +1,13 @@
+{
+  "name": "react-zhaopin-app-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.4",
+    "nodemon": "^1.18.9"
+  }
+}
