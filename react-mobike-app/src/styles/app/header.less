@@ -1,0 +1,46 @@
+@import '../variable/index.less';
+
+.header {
+  background: @colorM;
+  .header-top {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    text-align: right;
+    a.exit {
+      margin-left: 15px;
+    }
+  }
+  .header-nav {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-top: 1px solid #1DA57A;
+    .breadcrumb {
+      text-align: center;
+      font-size: @fontD;
+      &:after {
+        position: absolute;
+        content: '';
+        left: 73px;
+        top: 39px;
+        border-top: 9px solid @colorM;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+      }
+    }
+    .weather {
+      .today {
+        margin-right: 15px;
+      }
+      text-align: right;
+      .weather-detail {
+        img {
+          height: 15px;
+          margin-right: 5px;
+          margin-top: -1px;
+        }
+      }
+    }
+  }
+}

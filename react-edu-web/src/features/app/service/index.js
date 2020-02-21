@@ -1,0 +1,7 @@
+export { service as commonService } from '@/features/common/service'
+export { service as homeService } from '@/features/home/service'
+export { service as userService } from '@/features/user/service'
+export { service as authService } from '@/features/auth/service'
+export { service as courseService } from '@/features/course/service'
+export { service as modelService } from '@/features/model/service'
+export { service as settingsService } from '@/features/setting/service'

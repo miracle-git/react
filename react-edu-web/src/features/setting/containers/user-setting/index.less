@@ -1,0 +1,59 @@
+.main .user-settings-page {
+  padding: 40px 0 20px;
+  background-color: #FFF;
+}
+.main .user-settings-page .preview {
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  margin-left: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.main .user-settings-page .preview:hover .cover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.main .user-settings-page .preview:hover .fa-upload {
+  color: rgba(240, 240, 240, 0.8);
+}
+.main .user-settings-page input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.main .user-settings-page .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 120px;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.main .user-settings-page .fa-upload {
+  color: rgba(240, 240, 240, 0);
+}
+.main .user-settings-page .uploadify {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main .user-settings-page .ckeditor {
+  min-height: 300px;
+}
+.main .user-settings-page select {
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+.main .user-settings-page select:last-child {
+  margin-right: 0;
+}

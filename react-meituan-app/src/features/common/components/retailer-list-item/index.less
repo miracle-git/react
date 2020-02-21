@@ -1,0 +1,93 @@
+.mt-list-item {
+  display: flex;
+  padding: .1rem .12rem;
+  &::after {
+    background: @border-gray;
+    width: 93.5% !important;
+  }
+  .item-left {
+    position: relative;
+    .item-img {
+      width: .85rem;
+      height: .6rem;
+    }
+    .item-brand {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: @font-12;
+      padding: .02rem;
+      color: @white;
+      &.brand-pin {
+        background: @yellow;
+      }
+      &.brand-new {
+        background: @green;
+      }
+    }
+  }
+  .item-detail {
+    flex: 1;
+    margin-left: .08rem;
+    color: @gray;
+    .item-name {
+      font-size: @font-15;
+      font-weight: @font-600;
+      color: @black;
+    }
+    .item-desc {
+      margin-top: .08rem;
+      font-size: @font-13;
+      .item-desc-left {
+        float: left;
+        vertical-align: middle;
+        display: flex;
+        .mt-rating-star {
+          display: inline-block;
+        }
+        .sale-count {
+          display: inline-block;
+          margin-left: .05rem;
+        }
+      }
+      .item-desc-right {
+        float: right;
+        .divider {
+          display: inline-block;
+          margin: 0 .04rem;
+        }
+      }
+    }
+    .item-price {
+      margin-top: .12rem;
+      font-size: @font-13;
+      .item-pre-price {
+        float: left;
+        color: @red;
+      }
+      .item-mt-delivery {
+        float: right;
+        background: @yellow;
+        border-radius: .04rem;
+        padding: .04rem;
+        margin-top: -.08rem;
+        color: @white;
+      }
+    }
+    .item-info {
+      font-size: @font-12;
+      color: @gray;
+      margin-top: .1rem;
+      .item-info-icon {
+        width: .15rem;
+        height: .15rem;
+        display: inline-block;
+      }
+      .item-info-content {
+        margin-left: .05rem;
+        display: inline-block;
+        vertical-align: .03rem;
+      }
+    }
+  }
+}

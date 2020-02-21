@@ -1,0 +1,58 @@
+.mt-tab-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: .5rem;
+  border-top: 1px solid @border-light-gray;
+  background: @bg-gray;
+  .tab-item {
+    flex: 1;
+    font-size: @font-13;
+    color: @gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    .tab-item-icon {
+      width: .25rem;
+      height: .25rem;
+      margin-bottom: .05rem;
+      background-size: cover;
+    }
+    &.tab-item-active {
+      color: @black;
+    }
+    &.tab-item-home {
+      .tab-item-icon {
+        background-image: url("/static/img/tab-bar/home.png");
+      }
+      &.tab-item-active {
+        .tab-item-icon {
+          background-image: url("/static/img/tab-bar/home_active.png");
+        }
+      }
+    }
+    &.tab-item-order {
+      .tab-item-icon {
+        background-image: url("/static/img/tab-bar/order.png");
+      }
+      &.tab-item-active {
+        .tab-item-icon {
+          background-image: url("/static/img/tab-bar/order_active.png");
+        }
+      }
+    }
+    &.tab-item-mine {
+      .tab-item-icon {
+        background-image: url("/static/img/tab-bar/mine.png");
+      }
+      &.tab-item-active {
+        .tab-item-icon {
+          background-image: url("/static/img/tab-bar/mine_active.png");
+        }
+      }
+    }
+  }
+}

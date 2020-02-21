@@ -1,0 +1,99 @@
+.mine-page {
+  background: @bg-gray;
+  padding-bottom: .4rem;
+  .header {
+    width: 100%;
+    height: 1.6rem;
+    background-image: url("/static/img/mine/header.png");
+    background-size: cover;
+    overflow: hidden;
+    .avatar-img {
+      width: .72rem;
+      height: .72rem;
+      margin: 0 auto;
+      display: block;
+      margin-top: .25rem;
+      border: 3px solid rgba(255, 255, 255, .5);
+      border-radius: 50%;
+    }
+    .nick-name {
+      color: @black;
+      font-size: @font-16;
+      text-align: center;
+      margin-top: .15rem;
+    }
+  }
+  .content {
+    height: 2rem;
+    .items {
+      border-bottom: .1rem solid @bg-gray;
+      background-color: @white;
+      li {
+        height: .45rem;
+        line-height: .45rem;
+        font-size: @font-14;
+        margin-left: .15rem;
+        padding-left: .25rem;
+        border-bottom: 1px solid @border-light-gray;
+        position: relative;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:before, &:after {
+          display: block;
+          width: .16rem;
+          height: .16rem;
+          position: absolute;
+        }
+        &:before {
+          content: '';
+          background-size: cover;
+          top: 50%;
+          left: .01rem;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        &:after {
+          content: '>';
+          top: 0;
+          right: .1rem;
+          color: @gray;
+        }
+        &.address {
+          &:before {
+            background-image: url("/static/img/mine/address.png");
+          }
+        }
+        &.voucher {
+          &:before {
+            background-image: url("/static/img/mine/voucher.png");
+          }
+        }
+        &.feedback {
+          &:before {
+            background-image: url("/static/img/mine/feedback.png");
+          }
+        }
+        &.question {
+          &:before {
+            background-image: url("/static/img/mine/question.png");
+          }
+        }
+      }
+    }
+    .tel {
+      color: @yellow;
+      height: .45rem;
+      line-height: .45rem;
+      font-size: @font-14;
+      text-align: center;
+      border-bottom: .1rem solid @bg-gray;
+      background-color: @white;
+    }
+    .time {
+      color: @gray;
+      text-align: center;
+      margin-top: .15rem;
+    }
+  }
+}

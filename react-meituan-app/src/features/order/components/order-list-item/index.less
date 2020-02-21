@@ -1,0 +1,90 @@
+.mt-order-item {
+  padding: .1rem .12rem;
+  border-bottom: .1rem solid @bg-gray;
+  .order-item-inner {
+    display: flex;
+    &::after {
+      background: @border-gray;
+    }
+    .item-img {
+      width: .4rem;
+      height: .4rem;
+      border-radius: 50%;
+    }
+    .item-right {
+      flex: 1;
+      margin-left: .1rem;
+      .item-top {
+        display: flex;
+        padding: .08rem 0;
+        align-items: center;
+        &::after {
+          background: @border-gray;
+        }
+        .item-name {
+          font-size: .16rem;
+          font-weight: @font-600;
+          width: 2.2rem;
+        }
+        .arrow-icon {
+          width: .08rem;
+          height: .08rem;
+          border-color: @border-gray;
+          border-style: solid;
+          border-width: .01rem 0.01rem 0 0;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+        .item-status {
+          margin-left: .15rem;
+          font-size: @font-14;
+          color: @gray;
+        }
+      }
+      .item-bottom {
+        padding: .08rem 0;
+        .product-item {
+          color: @dark;
+          font-size: @font-14;
+          padding: .05rem 0;
+          .product-count {
+            float: right;
+            margin-right: .02rem;
+          }
+          .product-more {
+            letter-spacing: .01rem;
+          }
+          .product-total {
+            font-size: @font-12;
+            color: @dark;
+            display: inline-block;
+            float: right;
+            .total-price {
+              color: @red;
+              font-size: @font-14;
+              letter-spacing: .01rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .item-comment {
+    padding-top: .1rem;
+    .comment-btn {
+      float: right;
+      width: 1rem;
+      height: .32rem;
+      line-height: .32rem;
+      background: @yellow;
+      color: @white;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .item-name {
+      width: 2.1rem !important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../variable/index.less';
+
+.container {
+  display: flex;
+  .left {
+    width: 15%;
+    min-width: 200px;
+    height: calc(100vh);
+    background: @colorR;
+  }
+  .main {
+    flex: 1;
+    height: calc(100vh);
+    background: @colorL;
+    overflow: auto;
+    .content {
+      padding: 15px;
+      position: relative;
+    }
+  }
+}

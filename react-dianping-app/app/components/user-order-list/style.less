@@ -1,0 +1,77 @@
+@import "../../static/css/base";
+
+#order-list-container {
+  .order-item-container {
+    background-color: #fff;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .btn {
+    width: 80px;
+    text-align: center;
+    background-color: @main-bg-color;
+    color: #fff;
+    padding: 5px 0;
+    margin-top: 25px;
+    border: 0;
+    font-size: 16px;
+  }
+
+  .btn-submit {
+    margin-right: 10px;
+  }
+
+  .btn-unselected {
+    background-color: #999;
+  }
+
+  .order-item {
+    padding: 10px 0;
+
+    .order-item-left {
+      width: 120px;
+      height: 90px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .order-item-right {
+      width: 100px;
+      text-align: right;
+    }
+
+    .order-item-middle {
+      margin: 0 130px;
+
+      span {
+        color: #666;
+        display: block;
+        text-align: left;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .order-comment-container {
+    margin-top: 10px;
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      border: 1px solid #f1f1f1;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .star-container {
+      padding-top: 10px;
+      display: block;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+}

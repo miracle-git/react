@@ -1,0 +1,41 @@
+@import '../variable/index.less';
+
+.order-detail-container {
+  margin: 10px auto;
+  width: 90%;
+  .ant-card-body {
+    padding: 0 24px;
+  }
+  .order-detail-map {
+    height: 400px;
+    margin: 0 -25px;
+  }
+  .order-detail-item {
+    border-bottom: 1px solid @colorN;
+    &:last-child {
+      border-bottom: 0;
+    }
+    .item-title {
+      margin: 20px 0;
+      font-size: @fontE;
+      color: @colorU;
+    }
+    .item-form {
+      li {
+        margin: 20px 0;
+        line-height: 20px;
+        font-size: @fontF;
+        color: @colorC;
+        .item-left {
+          float: left;
+          width: 160px;
+          text-align: right;
+          color: @colorH;
+        }
+        .item-right {
+          padding-left: 180px;
+        }
+      }
+    }
+  }
+}

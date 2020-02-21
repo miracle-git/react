@@ -1,0 +1,28 @@
+.mt-retailer-list {
+  margin-top: .1rem;
+  padding-top: .15rem;
+  background: @white;
+  .list-header {
+    &::after {
+      background: @border-gray;
+    }
+  }
+  .retailer-title {
+    font-size: @font-16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .15rem;
+    color: @gray;
+    span {
+      display: inline-block;
+      margin: 0 .04rem;
+      color: @black;
+    }
+    &::before,
+    &::after {
+      content: '——';
+      display: block;
+    }
+  }
+}

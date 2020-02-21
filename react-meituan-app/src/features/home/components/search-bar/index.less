@@ -1,0 +1,68 @@
+.mt-search-bar {
+  width: 100%;
+  height: .4rem;
+  position: absolute;
+  padding-top: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: @font-14;
+  .location {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-right: .15rem;
+    width: 1rem;
+    height: .28rem;
+    line-height: .28rem;
+    border-radius: .15rem;
+    background: rgba(0,0,0,.33);
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: .15rem;
+      height: .2rem;
+      background-image: url(/static/img/home/location.png);
+      background-size: cover;
+      left: .1rem;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: .14rem;
+      height: .14rem;
+      background-image: url(/static/img/home/arrow_right.png);
+      background-size: cover;
+      right: .05rem;
+    }
+    .city {
+      color: #fff;
+      margin-left: .32rem;
+    }
+  }
+  .search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 1.35rem;
+    height: .28rem;
+    background: #fff;
+    border-radius: .15rem;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: .14rem;
+      height: .14rem;
+      background-image: url(/static/img/home/search.png);
+      background-size: cover;
+      left: .1rem;
+    }
+    .placeholder {
+      margin-left: .28rem;
+      color: @gray;
+    }
+  }
+}
